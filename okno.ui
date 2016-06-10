@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>okno</class>
+ <widget class="QMainWindow" name="okno">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>737</width>
+    <height>459</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Pexeser</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QGridLayout" name="Grid"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>737</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuSet">
+    <property name="title">
+     <string>Začít</string>
+    </property>
+    <addaction name="actionNew_Game_2"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuConnect">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="title">
+     <string>Connect</string>
+    </property>
+    <addaction name="actionTo_server"/>
+    <addaction name="actionCreate_server"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Pomoc</string>
+    </property>
+    <addaction name="actionHow_to_play"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuSet"/>
+   <addaction name="menuConnect"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionTo_server">
+   <property name="text">
+    <string>To server</string>
+   </property>
+  </action>
+  <action name="actionCreate_server">
+   <property name="text">
+    <string>Create server</string>
+   </property>
+  </action>
+  <action name="actionDificulty">
+   <property name="text">
+    <string>Dificulty</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Zavřít</string>
+   </property>
+  </action>
+  <action name="actionHow_to_play">
+   <property name="text">
+    <string>Jak hrát</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>O programu</string>
+   </property>
+  </action>
+  <action name="actionNew_Game_2">
+   <property name="text">
+    <string>Nová hra</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
